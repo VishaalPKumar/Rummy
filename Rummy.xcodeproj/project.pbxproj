@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5013FADF2C6BA06400A21890 /* RummyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5013FADE2C6BA06400A21890 /* RummyApp.swift */; };
-		5013FAE12C6BA06400A21890 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5013FAE02C6BA06400A21890 /* ContentView.swift */; };
+		5013FAE12C6BA06400A21890 /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5013FAE02C6BA06400A21890 /* CreateGameView.swift */; };
 		5013FAE32C6BA06500A21890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5013FAE22C6BA06500A21890 /* Assets.xcassets */; };
 		5013FAE72C6BA06500A21890 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5013FAE62C6BA06500A21890 /* Preview Assets.xcassets */; };
+		5013FAEE2C6BA72300A21890 /* CurrentGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5013FAED2C6BA72300A21890 /* CurrentGameView.swift */; };
+		5013FAF22C6CEB9000A21890 /* EditRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5013FAF12C6CEB9000A21890 /* EditRoundView.swift */; };
+		5067104E2C6E1A8B00D34101 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067104D2C6E1A8B00D34101 /* Game.swift */; };
+		506710502C6E21D300D34101 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067104F2C6E21D300D34101 /* GameListView.swift */; };
+		506710522C6E55F800D34101 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506710512C6E55F800D34101 /* FloatingButton.swift */; };
+		506710582C6F446600D34101 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506710572C6F446600D34101 /* Array+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5013FADB2C6BA06400A21890 /* Rummy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rummy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5013FADE2C6BA06400A21890 /* RummyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RummyApp.swift; sourceTree = "<group>"; };
-		5013FAE02C6BA06400A21890 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5013FAE02C6BA06400A21890 /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
 		5013FAE22C6BA06500A21890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5013FAE42C6BA06500A21890 /* Rummy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rummy.entitlements; sourceTree = "<group>"; };
 		5013FAE62C6BA06500A21890 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5013FAED2C6BA72300A21890 /* CurrentGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGameView.swift; sourceTree = "<group>"; };
+		5013FAF12C6CEB9000A21890 /* EditRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRoundView.swift; sourceTree = "<group>"; };
+		5067104D2C6E1A8B00D34101 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5067104F2C6E21D300D34101 /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
+		506710512C6E55F800D34101 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		506710572C6F446600D34101 /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,11 @@
 		5013FADD2C6BA06400A21890 /* Rummy */ = {
 			isa = PBXGroup;
 			children = (
+				506710562C6F444E00D34101 /* Utils */,
+				506710552C6F440F00D34101 /* View */,
+				506710542C6F440500D34101 /* Screen */,
+				506710532C6F43FF00D34101 /* Model */,
 				5013FADE2C6BA06400A21890 /* RummyApp.swift */,
-				5013FAE02C6BA06400A21890 /* ContentView.swift */,
 				5013FAE22C6BA06500A21890 /* Assets.xcassets */,
 				5013FAE42C6BA06500A21890 /* Rummy.entitlements */,
 				5013FAE52C6BA06500A21890 /* Preview Content */,
@@ -67,6 +82,41 @@
 				5013FAE62C6BA06500A21890 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		506710532C6F43FF00D34101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5067104D2C6E1A8B00D34101 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		506710542C6F440500D34101 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5013FAE02C6BA06400A21890 /* CreateGameView.swift */,
+				5013FAED2C6BA72300A21890 /* CurrentGameView.swift */,
+				5013FAF12C6CEB9000A21890 /* EditRoundView.swift */,
+				5067104F2C6E21D300D34101 /* GameListView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		506710552C6F440F00D34101 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				506710512C6E55F800D34101 /* FloatingButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		506710562C6F444E00D34101 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				506710572C6F446600D34101 /* Array+Ext.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5013FAE12C6BA06400A21890 /* ContentView.swift in Sources */,
+				5013FAF22C6CEB9000A21890 /* EditRoundView.swift in Sources */,
+				5067104E2C6E1A8B00D34101 /* Game.swift in Sources */,
+				506710522C6E55F800D34101 /* FloatingButton.swift in Sources */,
+				506710502C6E21D300D34101 /* GameListView.swift in Sources */,
+				5013FAEE2C6BA72300A21890 /* CurrentGameView.swift in Sources */,
+				506710582C6F446600D34101 /* Array+Ext.swift in Sources */,
+				5013FAE12C6BA06400A21890 /* CreateGameView.swift in Sources */,
 				5013FADF2C6BA06400A21890 /* RummyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
